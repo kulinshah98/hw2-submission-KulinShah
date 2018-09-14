@@ -1,0 +1,23 @@
+a)
+-> Bitcode representation of the LLVM IR is used for serializing and Human-readable assembly IR is a C++ object format suitable for frontends.
+-> The llvm-dis command takes a bitcode IR file  as input and coverts it into Human-readable assembly IR.
+-> The llvm-as command takes a Human-readable LLVM assembly language file and give output a file containing LLVM bitcode.
+
+
+b)
+-> Clang converts source program to optimizer level IR.
+-> Now, this optimizer level IR will be machine-independent and Front-end independent.
+-> This optimizer level IR is same as LLVM IR therefore it is machine-independent
+-> therefore LLVM IR does not affect the LLVM compiler architecture.
+
+c)
+-> The opt command is the modular LLVM optimizer and analyzer.
+-> It takes LLVM source files as input, runs the specified optimizations or analyses on it, and then outputs the optimized file or the analysis results.
+
+
+d)
+-> llc is a LLVM compiler. It takes LLVM source code as an input and converts into assembly language for a specified architecture.
+-> This assembly language output file can be given to assembler and linker to generate a native executable.
+
+e)
+-> lli take LLVM bitcode format as an input and executes it using a just-in time compiler.
